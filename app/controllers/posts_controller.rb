@@ -1,6 +1,7 @@
-class PostsController < ApplicationController
-  def index
-    @posts = Post.all
-    render json: @posts
-  end
+# class PostsController < ApplicationController
+class PostsController < JSONAPI::ResourceController
+  # def index
+  #   @posts = Post.all
+  #   render json: @posts
+  # end
 end

@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/rails-api/active_model_serializers.git
+  revision: cb20b957edbd393c3d09e4bb7b4623ea522cf45b
+  specs:
+    active_model_serializers (0.10.2)
+      actionpack (>= 4.1, < 6)
+      activemodel (>= 4.1, < 6)
+      jsonapi (= 0.1.1.beta2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -43,10 +52,15 @@ GEM
     byebug (9.0.6)
     concurrent-ruby (1.0.2)
     erubis (2.7.0)
+    faker (1.6.6)
+      i18n (~> 0.5)
     ffi (1.9.14)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
+    json (1.8.3)
+    jsonapi (0.1.1.beta2)
+      json (~> 1.8)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -119,7 +133,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers!
   byebug
+  faker
   listen (~> 3.0.5)
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
